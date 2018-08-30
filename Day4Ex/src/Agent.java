@@ -1,3 +1,11 @@
+
+/*
+ * Created by Joel Barr
+ * 8/29/18 2:41 PM.
+ * SAIT CMPP-264, Summer 2018
+ * Day 4 Exercise
+ */
+
 public class Agent extends Person {
     private String phone;
     private double commissionRate;
@@ -24,8 +32,10 @@ public class Agent extends Person {
         this.commissionRate = commissionRate;
     }
 
+    //Prints out Agent information
     public void display()
     {
+        //3 lines are printed with everything under the name being indented
         System.out.printf("%s\n\t%s\n\tCommission: %s\n\n",
                 makePhonebookName(),
                 phone,

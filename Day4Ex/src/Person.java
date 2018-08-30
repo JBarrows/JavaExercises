@@ -1,3 +1,11 @@
+
+/*
+ * Created by Joel Barr
+ * 8/29/18 2:24 PM.
+ * SAIT CMPP-264, Summer 2018
+ * Day 4 Exercise
+ */
+
 public abstract class Person {
     protected String name;
 
