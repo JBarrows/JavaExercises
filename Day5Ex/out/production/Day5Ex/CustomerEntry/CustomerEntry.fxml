@@ -1,0 +1,41 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:controller="CustomerEntry.Controller" xmlns:fx="http://javafx.com/fxml">
+    <GridPane alignment="TOP_CENTER" hgap="10" vgap="10">
+        <padding><Insets top="10" right="10" bottom="10" left="10" /></padding>
+        <Label text="First Name:"
+               GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField  fx:id="txtFirstName" text="John" GridPane.columnIndex="1" GridPane.rowIndex="0"
+                    GridPane.columnSpan="2" />
+        <Label text="Last name:"
+               GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField  fx:id="txtLastName" text="Anderson" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                    GridPane.columnSpan="2"/>
+        <Label text="Address:"
+               GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="txtAddress" text="400 Center St." GridPane.columnIndex="1" GridPane.rowIndex="2"
+                GridPane.columnSpan="2"/>
+        <Label text="City:"
+               GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField  fx:id="txtCity" text="Calgary" GridPane.columnIndex="1" GridPane.rowIndex="3"
+                    GridPane.columnSpan="2"/>
+        <Label text="Province:"
+               GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="txtProvince" text="AB" GridPane.columnIndex="1" GridPane.rowIndex="4"
+                    GridPane.columnSpan="2"/>
+        <Label text="Postal Code:"
+               GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField  fx:id="txtPostal" text="T3A 0M0" GridPane.columnIndex="1" GridPane.rowIndex="5"
+                    GridPane.columnSpan="2"/>
+    </GridPane>
+    <HBox alignment="CENTER" spacing="40">
+        <Button text="Save" minWidth="80" onAction="#onSavePressed"/>
+        <Button text="Cancel" minWidth="80" onAction="#onCancelPressed"/>
+    </HBox>
+</VBox>
